@@ -169,7 +169,7 @@
       height: 100%;
       min-width: 0;
       min-height: 0;
-      background: radial-gradient(circle at center, #081226 0%, #030712 100%);
+      background: radial-gradient(circle at center, #1b2432 0%, #090d14 100%);
       overflow: hidden;
     }
 
@@ -344,14 +344,9 @@
           <span id="view-projection-text">🌐 3D Globe</span>
         </button>
 
-        <!-- Desktop vs Mobile Layout Toggle Button -->
-        <button id="btn-device-mode" class="px-2 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition" title="Toggle between Desktop Widescreen and Mobile Touch Layout">
-          UI: <span id="device-mode-text" class="text-amber-300 font-semibold">Desktop</span>
-        </button>
-
         <!-- Map Style Toggle Button -->
-        <button id="btn-map-style" class="px-2 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition" title="Toggle Satellite vs Vector Political Map">
-          Map: <span id="map-style-text" class="text-emerald-300 font-semibold">Satellite</span>
+        <button id="btn-map-style" class="px-2 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition" title="Toggle Dark Muted Landscape vs Darkened Satellite Map">
+          Map: <span id="map-style-text" class="text-amber-300 font-semibold">Dark Landscape</span>
         </button>
 
         <!-- Labels Mode Cycle Button (Smart / Hover Only / Off) -->
@@ -550,8 +545,8 @@
             <button id="btn-zoom-out" class="w-7 h-7 rounded bg-slate-800 hover:bg-slate-700 text-sky-300 font-bold text-sm flex items-center justify-center transition" title="Zoom Out">−</button>
           </div>
           <div class="bg-slate-950/85 border border-slate-800 rounded-md px-2 py-1 text-[10px] text-slate-300 flex items-center gap-2 shadow">
-            <span class="flex items-center gap-1"><span class="w-2.5 h-0.5 bg-sky-300 inline-block"></span>State/Sovereign</span>
-            <span class="flex items-center gap-1"><span class="w-2.5 h-0.5 bg-amber-400 inline-block"></span>Territory/Empire</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-0.5 bg-stone-600 inline-block"></span>State/Sovereign</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-0.5 bg-amber-600 inline-block"></span>Territory/Empire</span>
           </div>
         </div>
 
@@ -690,13 +685,13 @@
       "cardiff, glamorgan, wales": [51.4816, -3.1791],
       "swansea, wales": [51.6214, -3.9436],
       "merthyr tydfil, wales": [51.7479, -3.3778],
-      "wales": [52.1307, -3.7837],
+      "wales": [51.4816, -3.1791],
       "inverness, inverness-shire, scotland": [57.4778, -4.2247],
       "aberdeen, aberdeenshire, scotland": [57.1497, -2.0943],
       "dundee, angus, scotland": [56.4620, -2.9707],
       "edinburgh, midlothian, scotland": [55.9533, -3.1883],
       "glasgow, lanarkshire, scotland": [55.8642, -4.2518],
-      "scotland": [56.4907, -4.2026],
+      "scotland": [55.9533, -3.1883],
       "cork, county cork, ireland": [51.8985, -8.4756],
       "queenstown, cork, ireland": [51.8503, -8.2943],
       "cobh, cork, ireland": [51.8503, -8.2943],
@@ -705,37 +700,37 @@
       "dublin, ireland": [53.3498, -6.2603],
       "belfast, antrim, ireland": [54.5973, -5.9301],
       "londonderry, ulster, ireland": [54.9966, -7.3086],
-      "ireland": [53.4129, -8.2439],
-      "england": [52.3555, -1.1743],
-      "united kingdom": [54.0, -2.0],
+      "ireland": [53.3498, -6.2603],
+      "england": [51.5074, -0.1278],
+      "united kingdom": [51.5074, -0.1278],
 
-      // --- Scandinavia & Western/Central/Southern Europe ---
+      // --- Scandinavia & Western/Central/Southern Europe (Populous Historical Hubs) ---
       "uppsala, sweden": [59.8586, 17.6389],
       "stockholm, sweden": [59.3293, 18.0686],
       "gothenburg, sweden": [57.7089, 11.9746],
       "malmo, skane, sweden": [55.6050, 13.0038],
-      "sweden": [60.1282, 18.6435],
+      "sweden": [59.3293, 18.0686],
       "oslo, norway": [59.9139, 10.7522],
       "christiania, norway": [59.9139, 10.7522],
       "bergen, norway": [60.3913, 5.3221],
       "trondheim, norway": [63.4305, 10.3951],
       "stavanger, norway": [58.9700, 5.7331],
-      "norway": [60.4720, 8.4689],
+      "norway": [59.9139, 10.7522],
       "aalborg, jutland, denmark": [57.0488, 9.9217],
       "viborg, jutland, denmark": [56.4520, 9.3963],
       "aarhus, denmark": [56.1629, 10.2039],
       "odense, funen, denmark": [55.4038, 10.4024],
       "copenhagen, denmark": [55.6761, 12.5683],
-      "denmark": [56.2639, 9.5018],
+      "denmark": [55.6761, 12.5683],
       "helsinki, finland": [60.1699, 24.9384],
-      "finland": [61.9241, 25.7482],
+      "finland": [60.1699, 24.9384],
       "amsterdam, netherlands": [52.3676, 4.9041],
       "rotterdam, netherlands": [51.9244, 4.4777],
       "leiden, netherlands": [52.1601, 4.4970],
-      "netherlands": [52.1326, 5.2913],
+      "netherlands": [52.3676, 4.9041],
       "antwerp, belgium": [51.2194, 4.4025],
       "brussels, belgium": [50.8503, 4.3517],
-      "belgium": [50.5039, 4.4699],
+      "belgium": [50.8503, 4.3517],
       "kiel, holstein, germany": [54.3233, 10.1228],
       "lubeck, holstein, germany": [53.8655, 10.6866],
       "hamburg, germany": [53.5511, 9.9937],
@@ -751,20 +746,23 @@
       "munich, bavaria, germany": [48.1351, 11.5820],
       "augsburg, bavaria, germany": [48.3705, 10.8978],
       "prussia": [52.5200, 13.4050],
-      "bavaria": [48.7904, 11.4979],
+      "bavaria": [48.1351, 11.5820],
       "wurttemberg": [48.7758, 9.1829],
-      "germany": [51.1657, 10.4515],
+      "germany": [50.1109, 8.6821],
       "zurich, switzerland": [47.3769, 8.5417],
       "bern, switzerland": [46.9480, 7.4474],
       "geneva, switzerland": [46.2044, 6.1432],
-      "switzerland": [46.8182, 8.2275],
+      "switzerland": [47.3769, 8.5417],
       "vienna, austria": [48.2082, 16.3738],
-      "austria": [47.5162, 14.5501],
+      "austria": [48.2082, 16.3738],
       "prague, bohemia": [50.0755, 14.4378],
       "warsaw, poland": [52.2297, 21.0122],
       "krakow, poland": [50.0647, 19.9450],
       "gdansk, poland": [54.3520, 18.6466],
-      "poland": [51.9194, 19.1451],
+      "poland": [52.2297, 21.0122],
+      "moscow, russia": [55.7558, 37.6173],
+      "st. petersburg, russia": [59.9343, 30.3351],
+      "russia": [55.7558, 37.6173],
       "strasbourg, alsace, france": [48.5734, 7.7521],
       "nancy, lorraine, france": [48.6921, 6.1844],
       "le havre, normandy, france": [49.4944, 0.1079],
@@ -772,54 +770,69 @@
       "marseille, france": [43.2965, 5.3698],
       "lyon, france": [45.7640, 4.8357],
       "paris, france": [48.8566, 2.3522],
-      "france": [46.2276, 2.2137],
+      "france": [48.8566, 2.3522],
       "seville, andalusia, spain": [37.3891, -5.9845],
       "cadiz, spain": [36.5271, -6.2886],
       "madrid, spain": [40.4168, -3.7038],
       "barcelona, spain": [41.3874, 2.1686],
-      "spain": [40.4637, -3.7492],
+      "spain": [40.4168, -3.7038],
       "lisbon, portugal": [38.7223, -9.1393],
-      "portugal": [39.3999, -8.2245],
+      "portugal": [38.7223, -9.1393],
       "rome, italy": [41.9028, 12.4964],
       "naples, italy": [40.8518, 14.2681],
       "palermo, sicily, italy": [38.1157, 13.3615],
       "genoa, italy": [44.4056, 8.9463],
       "milan, italy": [45.4642, 9.1900],
       "venice, italy": [45.4408, 12.3155],
-      "italy": [41.8719, 12.5674],
+      "italy": [41.9028, 12.4964],
 
       // --- Africa (West, East, North & Southern Africa) ---
       "elmina, central region, ghana": [5.0847, -1.3509],
       "cape coast, ghana": [5.1315, -1.2795],
       "kumasi, ashanti, ghana": [6.6885, -1.6244],
       "accra, ghana": [5.6037, -0.1870],
-      "ghana": [7.9465, -1.0232],
+      "ghana": [5.6037, -0.1870],
       "saint-louis, senegal": [16.0326, -16.4818],
       "dakar, senegal": [14.7167, -17.4677],
       "goree, senegal": [14.6669, -17.3986],
-      "senegal": [14.4974, -14.4524],
+      "senegal": [14.7167, -17.4677],
       "lagos, nigeria": [6.5244, 3.3792],
       "calabar, nigeria": [4.9757, 8.3417],
-      "nigeria": [9.0820, 8.6753],
+      "nigeria": [6.5244, 3.3792],
       "freetown, sierra leone": [8.4657, -13.2317],
       "monrovia, liberia": [6.3156, -10.8074],
       "luanda, angola": [-8.8390, 13.2894],
       "cape town, south africa": [-33.9249, 18.4241],
       "johannesburg, south africa": [-26.2041, 28.0473],
       "durban, south africa": [-29.8587, 31.0218],
-      "south africa": [-30.5595, 22.9375],
+      "south africa": [-33.9249, 18.4241],
       "cairo, egypt": [30.0444, 31.2357],
       "alexandria, egypt": [31.2001, 29.9187],
       "nairobi, kenya": [-1.2921, 36.8219],
       "addis ababa, ethiopia": [9.0320, 38.7469],
 
-      // --- Caribbean, Central & South America ---
+      // --- Colonial Viceroyalties & Compound Historical Names in the Americas ---
+      "new spain": [19.4326, -99.1332],
+      "nueva espana": [19.4326, -99.1332],
+      "viceroyalty of new spain": [19.4326, -99.1332],
+      "virreinato de la nueva espana": [19.4326, -99.1332],
+      "new france": [46.8139, -71.2080],
+      "nouvelle-france": [46.8139, -71.2080],
+      "new granada": [4.7110, -74.0721],
+      "nueva granada": [4.7110, -74.0721],
+      "new amsterdam": [40.7128, -74.0060],
+      "new netherland": [40.7128, -74.0060],
+      "new england": [42.3601, -71.0589],
+      "new castile": [-12.0464, -77.0428],
+      "rio de la plata": [-34.6037, -58.3816],
+
+      // --- Caribbean, Central & South America (Populous Hubs) ---
       "cap-francais, saint-domingue": [19.7579, -72.2042],
       "cap-haitien, haiti": [19.7579, -72.2042],
       "port-au-prince, haiti": [18.5944, -72.3074],
-      "haiti": [18.9712, -72.2852],
+      "haiti": [18.5944, -72.3074],
       "kingston, jamaica": [17.9714, -76.7936],
-      "jamaica": [18.1096, -77.2975],
+      "jamaica": [17.9714, -76.7936],
       "havana, cuba": [23.1136, -82.3666],
       "san juan, puerto rico": [18.4655, -66.1057],
       "bridgetown, barbados": [13.0969, -59.6145],
@@ -831,7 +844,7 @@
       "guadalajara, jalisco, mexico": [20.6597, -103.3496],
       "monterrey, nuevo leon, mexico": [25.6866, -100.3161],
       "chihuahua, mexico": [28.6330, -106.0691],
-      "mexico": [23.6345, -102.5528],
+      "mexico": [19.4326, -99.1332],
       "panama city, panama": [8.9824, -79.5199],
       "bogota, colombia": [4.7110, -74.0721],
       "cartagena, colombia": [10.3910, -75.4794],
@@ -840,22 +853,22 @@
       "lima, peru": [-12.0464, -77.0428],
       "callao, peru": [-12.0566, -77.1181],
       "cusco, peru": [-13.5320, -71.9675],
-      "peru": [-9.1900, -75.0152],
+      "peru": [-12.0464, -77.0428],
       "la paz, bolivia": [-16.4897, -68.1193],
       "santiago, chile": [-33.4489, -70.6693],
       "valparaiso, chile": [-33.0472, -71.6127],
-      "chile": [-35.6751, -71.5430],
+      "chile": [-33.4489, -70.6693],
       "buenos aires, argentina": [-34.6037, -58.3816],
       "mendoza, argentina": [-32.8895, -68.8458],
       "cordoba, argentina": [-31.4201, -64.1888],
-      "argentina": [-38.4161, -63.6167],
+      "argentina": [-34.6037, -58.3816],
       "montevideo, uruguay": [-34.9011, -56.1645],
       "rio de janeiro, brazil": [-22.9068, -43.1729],
       "sao paulo, brazil": [-23.5505, -46.6333],
       "salvador, bahia, brazil": [-12.9714, -38.5014],
-      "brazil": [-14.2350, -51.9253],
+      "brazil": [-22.9068, -43.1729],
 
-      // --- East Asia, South Asia & Pacific / Oceania ---
+      // --- East Asia, South Asia & Pacific / Oceania (Populous Coastal Hubs) ---
       "kyoto, japan": [35.0116, 135.7681],
       "osaka, japan": [34.6937, 135.5023],
       "hiroshima, japan": [34.3853, 132.4553],
@@ -863,7 +876,7 @@
       "yokohama, kanagawa, japan": [35.4437, 139.6380],
       "tokyo, japan": [35.6762, 139.6503],
       "edo, japan": [35.6762, 139.6503],
-      "japan": [36.2048, 138.2529],
+      "japan": [35.0116, 135.7681],
       "guangzhou, guangdong, china": [23.1291, 113.2644],
       "canton, guangdong, china": [23.1291, 113.2644],
       "fuzhou, fujian, china": [26.0745, 119.2965],
@@ -872,29 +885,30 @@
       "macau, china": [22.1987, 113.5439],
       "shanghai, china": [31.2304, 121.4737],
       "beijing, china": [39.9042, 116.4074],
-      "china": [35.8617, 104.1954],
+      "china": [23.1291, 113.2644],
       "seoul, korea": [37.5665, 126.9780],
       "manila, philippines": [14.5995, 120.9842],
-      "philippines": [12.8797, 121.7740],
+      "philippines": [14.5995, 120.9842],
       "kolkata, india": [22.5726, 88.3639],
       "mumbai, india": [19.0760, 72.8777],
-      "india": [20.5937, 78.9629],
+      "india": [22.5726, 88.3639],
       "sydney, new south wales, australia": [-33.8688, 151.2093],
       "melbourne, victoria, australia": [-37.8136, 144.9631],
       "brisbane, queensland, australia": [-27.4698, 153.0251],
       "perth, western australia, australia": [-31.9505, 115.8605],
       "adelaide, south australia, australia": [-34.9285, 138.6007],
       "hobart, tasmania, australia": [-42.8821, 147.3272],
-      "australia": [-25.2744, 133.7751],
+      "australia": [-33.8688, 151.2093],
       "auckland, new zealand": [-36.8485, 174.7633],
       "wellington, new zealand": [-41.2865, 174.7762],
       "christchurch, new zealand": [-43.5321, 172.6362],
-      "new zealand": [-40.9006, 174.8860],
+      "new zealand": [-36.8485, 174.7633],
       "honolulu, oahu, hawaii": [21.3069, -157.8583],
       "lahaina, maui, hawaii": [20.8783, -156.6825],
       "hawaii": [21.3069, -157.8583],
 
-      // --- North America (US Cities, LDS Pioneer Sites, Canadian Cities & All 50 US State Centroids) ---
+      // --- North America (US Cities, LDS Pioneer Sites, Canadian Cities & All 50 US State Populous Hubs) ---
+      "united states": [39.9526, -75.1652],
       "boston, massachusetts": [42.3601, -71.0589],
       "salem, essex, massachusetts": [42.5195, -70.8967],
       "plymouth, massachusetts": [41.9584, -70.6673],
@@ -994,24 +1008,24 @@
       "halifax, nova scotia, canada": [44.6488, -63.5752],
       "vancouver, british columbia, canada": [49.2827, -123.1207],
 
-      // --- All 50 US State & Region Fallbacks (Prevents any US GEDCOM record from misplacing) ---
-      "alabama": [32.8067, -86.7911], "alaska": [61.3707, -152.4044], "arizona": [33.7298, -111.4312],
-      "arkansas": [34.9697, -92.3731], "california": [36.1162, -119.6816], "colorado": [39.0598, -105.3111],
-      "connecticut": [41.5978, -72.7554], "delaware": [39.3185, -75.5071], "florida": [27.7663, -81.6868],
-      "georgia": [33.0406, -83.6431], "idaho": [44.2405, -114.4788], "illinois": [40.3495, -88.9861],
-      "indiana": [39.8494, -86.2583], "iowa": [42.0115, -93.2105], "kansas": [38.5266, -96.7265],
-      "kentucky": [37.6681, -84.6701], "louisiana": [31.1695, -91.8678], "maine": [44.6939, -69.3819],
-      "maryland": [39.0639, -76.8021], "massachusetts": [42.2302, -71.5301], "michigan": [43.3266, -84.5361],
-      "minnesota": [45.6945, -93.9002], "mississippi": [32.7416, -89.6787], "missouri": [38.4561, -92.2884],
-      "montana": [46.9219, -110.4544], "nebraska": [41.1254, -98.2681], "nevada": [38.3135, -117.0554],
-      "new hampshire": [43.4525, -71.5639], "new jersey": [40.2989, -74.5210], "new mexico": [34.8405, -106.2485],
-      "new york": [42.1657, -74.9481], "north carolina": [35.6301, -79.8064], "north dakota": [47.5289, -99.7840],
-      "ohio": [40.3888, -82.7649], "oklahoma": [35.5653, -96.9289], "oregon": [44.5720, -122.0709],
-      "pennsylvania": [40.5908, -77.2098], "rhode island": [41.6809, -71.5118], "south carolina": [33.8569, -80.9450],
-      "south dakota": [44.2998, -99.4388], "tennessee": [35.7478, -86.6923], "texas": [31.0545, -97.5635],
-      "utah": [40.1500, -111.8624], "vermont": [44.0459, -72.7107], "virginia": [37.7693, -78.1700],
-      "washington": [47.4009, -121.4905], "west virginia": [38.4912, -80.9545], "wisconsin": [44.2685, -89.6165],
-      "wyoming": [42.7560, -107.3025],
+      // --- All 50 US State Defaults Placed at Historical Most Populous Cities ---
+      "alabama": [33.5186, -86.8104], "alaska": [57.0531, -135.3300], "arizona": [32.2226, -110.9747],
+      "arkansas": [34.7465, -92.2896], "california": [37.7749, -122.4194], "colorado": [39.7392, -104.9903],
+      "connecticut": [41.7658, -72.6734], "delaware": [39.7391, -75.5398], "florida": [29.8947, -81.3145],
+      "georgia": [32.0809, -81.0912], "idaho": [43.6150, -116.2023], "illinois": [41.8781, -87.6298],
+      "indiana": [39.7684, -86.1581], "iowa": [41.5868, -93.6250], "kansas": [39.0473, -95.6752],
+      "kentucky": [38.2527, -85.7585], "louisiana": [29.9511, -90.0715], "maine": [43.6591, -70.2568],
+      "maryland": [39.2904, -76.6122], "massachusetts": [42.3601, -71.0589], "michigan": [42.3314, -83.0458],
+      "minnesota": [44.9778, -93.2650], "mississippi": [31.5604, -91.4032], "missouri": [38.6270, -90.1994],
+      "montana": [46.5891, -112.0391], "nebraska": [41.2565, -95.9345], "nevada": [39.1638, -119.7674],
+      "new hampshire": [43.0718, -70.7626], "new jersey": [40.7357, -74.1724], "new mexico": [35.6870, -105.9378],
+      "new york": [40.7128, -74.0060], "north carolina": [35.7796, -78.6382], "north dakota": [46.8772, -96.7898],
+      "ohio": [39.1031, -84.5120], "oklahoma": [35.4676, -97.5164], "oregon": [45.5152, -122.6784],
+      "pennsylvania": [39.9526, -75.1652], "rhode island": [41.8240, -71.4128], "south carolina": [32.7765, -79.9311],
+      "south dakota": [43.5446, -96.7311], "tennessee": [36.1627, -86.7816], "texas": [29.4241, -98.4936],
+      "utah": [40.7608, -111.8910], "vermont": [44.4759, -73.2121], "virginia": [37.5407, -77.4360],
+      "washington": [47.6062, -122.3321], "west virginia": [40.0640, -80.7209], "wisconsin": [43.0389, -87.9065],
+      "wyoming": [41.1400, -104.8202],
 
       // --- UK & Irish Historic Counties / Shires ---
       "yorkshire": [53.9599, -1.0873], "north yorkshire": [54.1500, -1.3800], "west yorkshire": [53.8008, -1.5491],
@@ -1068,12 +1082,12 @@
       "alsace": [48.5734, 7.7521], "lorraine": [48.6921, 6.1844], "bohemia": [50.0755, 14.4378],
       "moravia": [49.1951, 16.6068],
 
-      // --- Canadian Provinces & Australian States ---
-      "ontario": [44.0000, -79.5000], "upper canada": [44.0000, -79.5000], "quebec": [46.8139, -71.2080],
-      "lower canada": [46.8139, -71.2080], "nova scotia": [44.6820, -63.7443], "new brunswick": [46.5653, -66.4619],
-      "prince edward island": [46.5107, -63.4168], "manitoba": [49.8951, -97.1384], "saskatchewan": [52.1332, -106.6700],
-      "alberta": [51.0447, -114.0719], "british columbia": [49.2827, -123.1207], "newfoundland": [47.5615, -52.7126],
-      "canada": [56.1304, -106.3468], "new south wales": [-33.8688, 151.2093], "victoria": [-37.8136, 144.9631],
+      // --- Canadian Provinces & Australian States (Historical Population Centers) ---
+      "ontario": [43.6532, -79.3832], "upper canada": [43.6532, -79.3832], "quebec": [46.8139, -71.2080],
+      "lower canada": [46.8139, -71.2080], "nova scotia": [44.6488, -63.5752], "new brunswick": [45.2733, -66.0633],
+      "prince edward island": [46.2382, -63.1311], "manitoba": [49.8951, -97.1384], "saskatchewan": [50.4452, -104.6189],
+      "alberta": [51.0447, -114.0719], "british columbia": [48.4284, -123.3656], "newfoundland": [47.5615, -52.7126],
+      "canada": [45.5017, -73.5673], "new south wales": [-33.8688, 151.2093], "victoria": [-37.8136, 144.9631],
       "queensland": [-27.4698, 153.0251], "south australia": [-34.9285, 138.6007], "western australia": [-31.9505, 115.8605],
       "tasmania": [-42.8821, 147.3272], "van diemen's land": [-42.8821, 147.3272],
 
@@ -1138,10 +1152,18 @@
       "gha": "ghana", "gold coast": "elmina, central region, ghana", "sen": "senegal", "nga": "nigeria", "zaf": "south africa",
       "can": "canada", "usa": "united states", "u.s.": "united states", "u.s.a.": "united states",
       "united states of america": "united states", "british colonial america": "virginia", "colonial america": "virginia",
+      "new spain": "new spain", "nueva espana": "new spain", "viceroyalty of new spain": "new spain", "virreinato de la nueva espana": "new spain",
+      "new france": "new france", "nouvelle-france": "new france", "new granada": "new granada", "nueva granada": "new granada",
+      "new amsterdam": "new amsterdam", "new netherland": "new netherland",
       "new england": "massachusetts", "deseret": "utah", "utah territory": "utah", "idaho territory": "idaho", "arizona territory": "arizona"
     };
 
     const resolvedPlaceCache = new Map();
+    const NORTH_POLE_COORDS = [90.0, 0.0];
+
+    // Pre-sort gazetteer keys by length descending so compound names ("new spain", "new mexico",
+    // "new south wales", "west virginia") ALWAYS match before shorter substrings ("spain", "mexico", "wales", "virginia")
+    const SORTED_GAZETTEER_ENTRIES = Object.entries(HISTORICAL_GAZETTEER).sort((a, b) => b[0].length - a[0].length);
 
     /**
      * Deterministic string hash in [-1, 1] so different counties/towns inside the same
@@ -1172,27 +1194,54 @@
 
     /**
      * Instant, 100% offline Country / Province / State / County geocoder.
-     * Parses right-to-left (Country -> State/Province -> County -> City) and
-     * always resolves to the best matching region immediately.
+     * Parses compound colonial territories ("New Spain", "New France", "New Mexico", etc.)
+     * before single-word country names, and returns `matched: false` if a place is empty/unresolvable
+     * so the caller can place unknown births at the North Pole or carry forward previous event locations.
      */
     function geocodePlaceWithConfidence(placeStr, fallbackCoords = null) {
       if (!placeStr || typeof placeStr !== "string") {
-        return { coords: fallbackCoords || [39.8283, -98.5795], exact: true };
+        return { coords: fallbackCoords ? [...fallbackCoords] : [...NORTH_POLE_COORDS], exact: false, matched: false };
       }
       const cacheKey = placeStr.toLowerCase().trim();
+      if (!cacheKey || cacheKey === "unknown" || cacheKey === "unspecified" || cacheKey === "n/a") {
+        return { coords: fallbackCoords ? [...fallbackCoords] : [...NORTH_POLE_COORDS], exact: false, matched: false };
+      }
       if (resolvedPlaceCache.has(cacheKey)) {
-        return { coords: [...resolvedPlaceCache.get(cacheKey)], exact: true };
+        return { coords: [...resolvedPlaceCache.get(cacheKey)], exact: true, matched: true };
       }
 
-      // Strip diacritics and split comma-delimited tokens
-      const ascii = cacheKey.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      // Strip diacritics and normalize spaces
+      const ascii = cacheKey.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").trim();
       if (HISTORICAL_GAZETTEER[ascii]) {
         resolvedPlaceCache.set(cacheKey, HISTORICAL_GAZETTEER[ascii]);
-        return { coords: [...HISTORICAL_GAZETTEER[ascii]], exact: true };
+        return { coords: [...HISTORICAL_GAZETTEER[ascii]], exact: true, matched: true };
+      }
+
+      // Priority check for compound colonial/regional names ("new spain", "nueva espana", "new france", "new granada", etc.)
+      const compoundOverrides = [
+        ["virreinato de la nueva espana", "new spain"],
+        ["viceroyalty of new spain", "new spain"],
+        ["nueva espana", "new spain"],
+        ["new spain", "new spain"],
+        ["nouvelle-france", "new france"],
+        ["new france", "new france"],
+        ["nueva granada", "new granada"],
+        ["new granada", "new granada"],
+        ["new amsterdam", "new amsterdam"],
+        ["new netherland", "new netherland"]
+      ];
+      for (const [phrase, canonicalKey] of compoundOverrides) {
+        if (ascii.includes(phrase) && HISTORICAL_GAZETTEER[canonicalKey]) {
+          const base = HISTORICAL_GAZETTEER[canonicalKey];
+          const firstTok = ascii.split(",")[0].trim();
+          const [dLat, dLon] = (firstTok && firstTok !== phrase) ? deterministicSubRegionOffset(firstTok) : [0, 0];
+          const finalCoords = [base[0] + dLat * 0.4, base[1] + dLon * 0.4];
+          resolvedPlaceCache.set(cacheKey, finalCoords);
+          return { coords: finalCoords, exact: true, matched: true };
+        }
       }
 
       const rawParts = ascii.split(",").map(s => normalizeToken(s)).filter(Boolean);
-      // Remove trailing "united states" if we already have a US state/county token before it
       const parts = rawParts.filter((p, idx) => !(idx === rawParts.length - 1 && p === "united states" && rawParts.length > 1));
 
       // 1. Try exact multi-token combinations (e.g. "cache, utah", "york, yorkshire, england")
@@ -1200,19 +1249,17 @@
         const fullJoin = parts.join(", ");
         if (HISTORICAL_GAZETTEER[fullJoin]) {
           resolvedPlaceCache.set(cacheKey, HISTORICAL_GAZETTEER[fullJoin]);
-          return { coords: [...HISTORICAL_GAZETTEER[fullJoin]], exact: true };
+          return { coords: [...HISTORICAL_GAZETTEER[fullJoin]], exact: true, matched: true };
         }
-        // Try [County/City, State/Country]
         const lastTwo = `${parts[parts.length - 2]}, ${parts[parts.length - 1]}`;
         if (HISTORICAL_GAZETTEER[lastTwo]) {
           resolvedPlaceCache.set(cacheKey, HISTORICAL_GAZETTEER[lastTwo]);
-          return { coords: [...HISTORICAL_GAZETTEER[lastTwo]], exact: true };
+          return { coords: [...HISTORICAL_GAZETTEER[lastTwo]], exact: true, matched: true };
         }
-        // Try [First token, State/Country]
         const firstAndLast = `${parts[0]}, ${parts[parts.length - 1]}`;
         if (HISTORICAL_GAZETTEER[firstAndLast]) {
           resolvedPlaceCache.set(cacheKey, HISTORICAL_GAZETTEER[firstAndLast]);
-          return { coords: [...HISTORICAL_GAZETTEER[firstAndLast]], exact: true };
+          return { coords: [...HISTORICAL_GAZETTEER[firstAndLast]], exact: true, matched: true };
         }
       }
 
@@ -1221,8 +1268,6 @@
         const tok = parts[i];
         if (HISTORICAL_GAZETTEER[tok]) {
           let [lat, lon] = HISTORICAL_GAZETTEER[tok];
-          // If we matched a broad State/Province/Country (i > 0), apply a subtle deterministic county/town offset
-          // from `parts[0]` so different counties/towns in the same state don't sit on the exact same coordinate
           if (i > 0 && parts[0]) {
             const [dLat, dLon] = deterministicSubRegionOffset(parts[0] + "_" + tok);
             lat += dLat;
@@ -1230,21 +1275,21 @@
           }
           const finalCoords = [lat, lon];
           resolvedPlaceCache.set(cacheKey, finalCoords);
-          return { coords: finalCoords, exact: true };
+          return { coords: finalCoords, exact: true, matched: true };
         }
       }
 
-      // 3. Partial word scan inside tokens (handles strings without commas like "Born in Yorkshire England")
-      for (const [key, coords] of Object.entries(HISTORICAL_GAZETTEER)) {
+      // 3. Longest-key-first scan (prevents "spain" from matching inside "new spain" or "virginia" inside "west virginia")
+      for (const [key, coords] of SORTED_GAZETTEER_ENTRIES) {
         if (key.length >= 4 && ascii.includes(key)) {
           const [dLat, dLon] = deterministicSubRegionOffset(ascii);
-          const finalCoords = [coords[0] + dLat * 0.5, coords[1] + dLon * 0.5];
+          const finalCoords = [coords[0] + dLat * 0.4, coords[1] + dLon * 0.4];
           resolvedPlaceCache.set(cacheKey, finalCoords);
-          return { coords: finalCoords, exact: true };
+          return { coords: finalCoords, exact: true, matched: true };
         }
       }
 
-      return { coords: fallbackCoords || [39.8283, -98.5795], exact: true };
+      return { coords: fallbackCoords ? [...fallbackCoords] : [...NORTH_POLE_COORDS], exact: false, matched: false };
     }
 
     function geocodePlaceString(placeStr, fallbackCoords = null) {
@@ -2737,7 +2782,7 @@
     let earthCanvas, earthCtx, earthCanvasTexture;
     let satelliteImgLoaded = false, satelliteImg = null;
     let cachedCountryFeatures = [], cachedUSStateFeatures = [];
-    let mapStyleMode = "satellite";
+    let mapStyleMode = "atlas"; // "atlas" (Traditional Cartographic Map) | "satellite" (Natural Earth Satellite)
     let lastRenderedBorderEraKey = "";
 
     // Historical US State Admission & Territorial Organization Table (by FIPS code & lowercase state name)
@@ -2895,8 +2940,7 @@
 
     /**
      * Determines how a modern country border from `countries-50m.json` should be styled at `year`.
-     * Countries that were partitioned or part of colonial/imperial unions in `year` render with
-     * subtle historical territorial styling, while active sovereign nations render with crisp borders.
+     * Uses classic cartographic sepia/slate and terracotta tones instead of digital neon blue.
      */
     function getCountryBorderStyleAtYear(countryFeature, year) {
       const id = String(countryFeature.id || "");
@@ -2904,25 +2948,27 @@
 
       // Partitioned Poland (1795 - 1918): merged into Prussia/Russia/Austria
       if ((id === "616" || name.includes("poland")) && year >= 1795 && year < 1918) {
-        return { stroke: "rgba(251, 191, 36, 0.22)", width: 0.7, isHistoricalSub: true };
+        return { stroke: "rgba(217, 149, 67, 0.25)", width: 0.75, isHistoricalSub: true };
       }
       // Sub-Saharan Africa pre-1885 Berlin Conference vs 1885-1957 Colonial vs 1957+ Sovereign
       const africanIds = new Set(["288", "686", "566", "404", "710", "024", "180", "384", "466", "834", "800"]);
       if (africanIds.has(id)) {
-        if (year < 1884) return { stroke: "rgba(251, 191, 36, 0.25)", width: 0.75, isHistoricalSub: true };
-        if (year < 1957) return { stroke: "rgba(251, 191, 36, 0.50)", width: 1.0, isHistoricalSub: true };
+        if (year < 1884) return { stroke: "rgba(217, 149, 67, 0.25)", width: 0.75, isHistoricalSub: true };
+        if (year < 1957) return { stroke: "rgba(217, 149, 67, 0.45)", width: 1.0, isHistoricalSub: true };
       }
       // German Confederation / Pre-1871 vs Unified
       if ((id === "276" || name.includes("germany")) && year < 1871) {
-        return { stroke: "rgba(251, 191, 36, 0.55)", width: 1.1, isHistoricalSub: true };
+        return { stroke: "rgba(217, 149, 67, 0.50)", width: 1.1, isHistoricalSub: true };
       }
       // Pre-1861 Italy
       if ((id === "380" || name.includes("italy")) && year < 1861) {
-        return { stroke: "rgba(251, 191, 36, 0.50)", width: 1.0, isHistoricalSub: true };
+        return { stroke: "rgba(217, 149, 67, 0.45)", width: 1.0, isHistoricalSub: true };
       }
 
-      const defaultStroke = mapStyleMode === "satellite" ? "rgba(125, 211, 252, 0.68)" : "rgba(56, 189, 248, 0.82)";
-      return { stroke: defaultStroke, width: 1.5, isHistoricalSub: false };
+      const defaultStroke = mapStyleMode === "satellite"
+        ? "rgba(168, 162, 150, 0.50)"
+        : "rgba(138, 148, 132, 0.55)";
+      return { stroke: defaultStroke, width: 1.35, isHistoricalSub: false };
     }
 
     function getCameraZoomScale() {
@@ -3484,8 +3530,8 @@
       const ctx = c.getContext("2d");
       const grad = ctx.createRadialGradient(32, 32, 2, 32, 32, 30);
       grad.addColorStop(0, "rgba(255,255,255,1)");
-      grad.addColorStop(0.35, "rgba(255,255,255,0.85)");
-      grad.addColorStop(0.7, "rgba(255,255,255,0.22)");
+      grad.addColorStop(0.28, "rgba(255,255,255,0.82)");
+      grad.addColorStop(0.55, "rgba(255,255,255,0.16)");
       grad.addColorStop(1, "rgba(255,255,255,0)");
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, 64, 64);
@@ -3554,17 +3600,26 @@
       const H = earthCanvas.height;
       const resScale = W / 4096;
 
+      // Dark Muted Ocean Base so glowing ancestor dots & trails have high contrast
       const oceanGrad = earthCtx.createLinearGradient(0, 0, 0, H);
-      oceanGrad.addColorStop(0, "#040d1e");
-      oceanGrad.addColorStop(0.5, "#071833");
-      oceanGrad.addColorStop(1, "#040d1e");
+      if (mapStyleMode === "satellite") {
+        oceanGrad.addColorStop(0, "#081019");
+        oceanGrad.addColorStop(0.5, "#0d1824");
+        oceanGrad.addColorStop(1, "#081019");
+      } else {
+        oceanGrad.addColorStop(0, "#0a131c");
+        oceanGrad.addColorStop(0.5, "#101e2b");
+        oceanGrad.addColorStop(1, "#0a131c");
+      }
       earthCtx.fillStyle = oceanGrad;
       earthCtx.fillRect(0, 0, W, H);
 
       if (mapStyleMode === "satellite" && satelliteImgLoaded && satelliteImg) {
         earthCtx.save();
-        earthCtx.globalAlpha = 0.88;
+        earthCtx.globalAlpha = 0.42;
         earthCtx.drawImage(satelliteImg, 0, 0, W, H);
+        earthCtx.fillStyle = "rgba(8, 14, 20, 0.38)";
+        earthCtx.fillRect(0, 0, W, H);
         earthCtx.restore();
       }
 
@@ -3586,9 +3641,18 @@
         }
       }
 
-      // 1. Draw World Countries with Era-Aware Styling
+      // 1. Draw World Countries with Dark Muted Landscape Fill & Subdued Borders
       if (cachedCountryFeatures.length > 0) {
-        const landFill = mapStyleMode === "satellite" ? "rgba(15, 23, 42, 0.16)" : "rgba(30, 41, 59, 0.92)";
+        const landGrad = earthCtx.createLinearGradient(0, 0, 0, H);
+        landGrad.addColorStop(0, "#1c211e");
+        landGrad.addColorStop(0.3, "#212820");
+        landGrad.addColorStop(0.5, "#262b22");
+        landGrad.addColorStop(0.7, "#212820");
+        landGrad.addColorStop(1, "#1c211e");
+
+        const landFill = mapStyleMode === "satellite"
+          ? "rgba(26, 32, 26, 0.18)"
+          : landGrad;
         cachedCountryFeatures.forEach(feat => {
           const rings = feat.rings || feat;
           const style = getCountryBorderStyleAtYear(feat, forYear);
@@ -3600,7 +3664,7 @@
             if (ring.length < 2) return;
             earthCtx.beginPath();
             traceRingOnCanvas(ring);
-            if (rIdx === 0 && landFill !== "transparent") earthCtx.fill();
+            if (rIdx === 0 && mapStyleMode !== "satellite") earthCtx.fill();
             earthCtx.stroke();
           });
         });
@@ -3615,9 +3679,9 @@
           }
           const isAdmittedState = !meta || forYear >= meta.statehood;
           earthCtx.strokeStyle = isAdmittedState
-            ? (mapStyleMode === "satellite" ? "rgba(186, 230, 253, 0.65)" : "rgba(125, 211, 252, 0.72)")
-            : "rgba(251, 191, 36, 0.62)"; // Pioneer / Colonial Territory Amber
-          earthCtx.lineWidth = (isAdmittedState ? 1.15 : 1.0) * resScale;
+            ? (mapStyleMode === "satellite" ? "rgba(168, 162, 150, 0.45)" : "rgba(132, 142, 126, 0.46)")
+            : "rgba(217, 149, 67, 0.62)"; // Muted Ochre-Amber for Pioneer / Colonial Territory
+          earthCtx.lineWidth = (isAdmittedState ? 1.1 : 1.0) * resScale;
 
           const rings = feat.rings || feat;
           rings.forEach(ring => {
@@ -3633,8 +3697,8 @@
       HISTORICAL_FRONTIER_POLYLINES.forEach(f => {
         if (forYear < f.startYear || forYear > f.endYear) return;
         earthCtx.save();
-        earthCtx.strokeStyle = f.color;
-        earthCtx.lineWidth = 2.0 * resScale;
+        earthCtx.strokeStyle = "rgba(217, 149, 67, 0.72)";
+        earthCtx.lineWidth = 1.9 * resScale;
         earthCtx.setLineDash([8 * resScale, 5 * resScale]);
         earthCtx.beginPath();
         f.coords.forEach(([lon, lat], i) => {
@@ -3647,8 +3711,8 @@
         earthCtx.restore();
       });
 
-      // Subtle Lat/Lon Graticule
-      earthCtx.strokeStyle = "rgba(56, 189, 248, 0.07)";
+      // Subtle Dark Landscape Graticule
+      earthCtx.strokeStyle = "rgba(148, 163, 184, 0.06)";
       earthCtx.lineWidth = 1 * resScale;
       for (let lat = -60; lat <= 60; lat += 30) {
         const y = ((90 - lat) / 180) * H;
@@ -3665,7 +3729,7 @@
 
     /**
      * Builds crisp 3D vector border geometry (`THREE.LineSegments`) directly on the globe surface
-     * (`GLOBE_RADIUS * 1.0015`) so zooming in very close remains razor-sharp at any magnification.
+     * (`GLOBE_RADIUS * 1.0015`) using classic cartographic colors so close-up zooming stays sharp.
      */
     function rebuild3DVectorBordersForYear(forYear) {
       if (!historicalBorders3DGroup) return;
@@ -3715,9 +3779,9 @@
         const geo = new THREE.BufferGeometry();
         geo.setAttribute("position", new THREE.Float32BufferAttribute(sovereignVerts, 3));
         const mat = new THREE.LineBasicMaterial({
-          color: 0x7dd3fc,
+          color: 0x7c8678,
           transparent: true,
-          opacity: 0.42,
+          opacity: 0.44,
           depthWrite: false
         });
         historicalBorders3DGroup.add(new THREE.LineSegments(geo, mat));
@@ -3727,9 +3791,9 @@
         const geo = new THREE.BufferGeometry();
         geo.setAttribute("position", new THREE.Float32BufferAttribute(territoryVerts, 3));
         const mat = new THREE.LineBasicMaterial({
-          color: 0xfbbf24,
+          color: 0xd99543,
           transparent: true,
-          opacity: 0.58,
+          opacity: 0.56,
           depthWrite: false
         });
         historicalBorders3DGroup.add(new THREE.LineSegments(geo, mat));
@@ -3892,8 +3956,8 @@
       glowTexture = createGlowTexture();
       crossTexture = createDeathCrossTexture();
 
-      scene.add(new THREE.AmbientLight(0xdbeafe, 0.95));
-      const dirLight1 = new THREE.DirectionalLight(0x38bdf8, 0.55);
+      scene.add(new THREE.AmbientLight(0xfdf8f0, 0.98));
+      const dirLight1 = new THREE.DirectionalLight(0xfffbeb, 0.45);
       dirLight1.position.set(250, 180, 200);
       scene.add(dirLight1);
 
@@ -3909,7 +3973,7 @@
         starPos[i * 3 + 2] = r * Math.cos(phi);
       }
       starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
-      scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x94a3b8, size: 1.4, transparent: true, opacity: 0.55 })));
+      scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x94a3b8, size: 1.4, transparent: true, opacity: 0.45 })));
 
       globeGroup = new THREE.Group();
       scene.add(globeGroup);
@@ -3918,14 +3982,14 @@
       const earthGeo = new THREE.SphereGeometry(GLOBE_RADIUS, 128, 128);
       const earthMat = new THREE.MeshPhongMaterial({
         map: createBaseEarthCanvasTexture(),
-        specular: new THREE.Color(0x0f172a),
-        shininess: 8
+        specular: new THREE.Color(0x1e293b),
+        shininess: 5
       });
       earthMesh = new THREE.Mesh(earthGeo, earthMat);
       globeGroup.add(earthMesh);
 
-      // Atmosphere Rim Shader
-      const atmosGeo = new THREE.SphereGeometry(GLOBE_RADIUS * 1.03, 64, 64);
+      // Subtle Natural Atmosphere Rim Shader (No digital neon glow)
+      const atmosGeo = new THREE.SphereGeometry(GLOBE_RADIUS * 1.026, 64, 64);
       const atmosMat = new THREE.ShaderMaterial({
         vertexShader: `
           varying vec3 vNormal;
@@ -3937,8 +4001,8 @@
         fragmentShader: `
           varying vec3 vNormal;
           void main() {
-            float intensity = pow(0.60 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.6);
-            gl_FragColor = vec4(0.22, 0.68, 0.98, 1.0) * intensity * 0.8;
+            float intensity = pow(0.58 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.8);
+            gl_FragColor = vec4(0.76, 0.82, 0.88, 1.0) * intensity * 0.42;
           }
         `,
         blending: THREE.AdditiveBlending,
@@ -4097,8 +4161,8 @@
       ctx.save();
       ctx.scale(dpr, dpr);
 
-      // 1. Deep Ocean Background
-      ctx.fillStyle = "#040d1e";
+      // 1. Dark Muted Ocean Background
+      ctx.fillStyle = mapStyleMode === "satellite" ? "#081019" : "#0c1620";
       ctx.fillRect(0, 0, width, height);
 
       const { mapW, mapH } = get2DMapMetrics(width, height);
@@ -4143,13 +4207,15 @@
           const meta = getUSStateHistoryMeta(feat);
           if (meta && currentYear < meta.territory) return;
           const isAdmitted = !meta || currentYear >= meta.statehood;
-          const color = isAdmitted ? "rgba(125, 211, 252, 0.78)" : "rgba(251, 191, 36, 0.78)";
-          (feat.rings || []).forEach(r => draw2DRing(r, color, isAdmitted ? 1.2 : 1.1, !isAdmitted));
+          const color = isAdmitted
+            ? "rgba(142, 152, 136, 0.55)"
+            : "rgba(217, 149, 67, 0.68)";
+          (feat.rings || []).forEach(r => draw2DRing(r, color, isAdmitted ? 1.15 : 1.05, !isAdmitted));
         });
 
         HISTORICAL_FRONTIER_POLYLINES.forEach(f => {
           if (currentYear >= f.startYear && currentYear <= f.endYear) {
-            draw2DRing(f.coords, f.color, 1.8, true);
+            draw2DRing(f.coords, "rgba(217, 149, 67, 0.72)", 1.7, true);
           }
         });
       }
@@ -4199,18 +4265,20 @@
         });
       }
 
-      // 5. Draw Expanding Milestone Shockwave Rings in 2D Mode
+      // 5. Draw Expanding Milestone Shockwave Rings in 2D Mode (Major vs Minor visual distinction)
       shockwaveRings.forEach(r => {
         const pos = vector3ToLatLon(r.mesh.position);
         const pt = latLonTo2DScreen(pos.lat, pos.lon, width, height);
         if (!pt.visible) return;
         const progress = Math.min(1, (now - r.bornAt) / r.duration);
-        const radiusPx = (6 + progress * 26) * Math.max(0.55, Math.min(1.3, 1.2 / Math.pow(map2DZoom, 0.25)));
+        const zoomFactor = Math.max(0.5, Math.min(1.15, 1.1 / Math.pow(map2DZoom, 0.28)));
+        const maxPx = r.isMajor ? 18 : 9.5;
+        const radiusPx = (3.5 + progress * maxPx) * zoomFactor;
         const hex = "#" + r.mesh.material.color.getHexString();
         ctx.save();
         ctx.strokeStyle = hex;
-        ctx.globalAlpha = Math.max(0, (1 - progress) * 0.9);
-        ctx.lineWidth = 2.2;
+        ctx.globalAlpha = Math.max(0, (1 - progress) * r.baseOpacity);
+        ctx.lineWidth = r.isMajor ? 2.1 : 1.15;
         ctx.beginPath();
         ctx.arc(pt.x, pt.y, radiusPx, 0, Math.PI * 2);
         ctx.stroke();
@@ -4236,8 +4304,7 @@
         });
       }
 
-      // 7. Draw Active Ancestor & Couple Light Dots in 2D Mode
-      const pulse = 1 + 0.14 * Math.sin(now * 0.006);
+      // 7. Draw Active Ancestor & Couple Light Dots in 2D Mode (Steady, Toned-Down Glow)
       activeLightVisuals.forEach((vis, key) => {
         if (!vis.lastState) return;
         const pt = latLonTo2DScreen(vis.lastState.lat, vis.lastState.lon, width, height);
@@ -4245,26 +4312,26 @@
         const isSelected = (selectedEntityKey === key);
         const isHovered = (hoveredEntityKey === key);
         const hex = "#" + vis.targetColor.getHexString();
-        const baseR = vis.kind === "COUPLE" ? 5.8 : 4.6;
-        const r = baseR * (isSelected ? 1.35 : (isHovered ? 1.2 : 1.0));
+        const baseR = vis.kind === "COUPLE" ? 5.0 : 4.0;
+        const r = baseR * (isSelected ? 1.3 : (isHovered ? 1.15 : 1.0));
 
-        // Outer Halo Glow
-        const haloR = r * 2.7 * pulse;
-        const grad = ctx.createRadialGradient(pt.x, pt.y, r * 0.3, pt.x, pt.y, haloR);
+        // Subtle, static outer glow so event shockwaves are clearly visible
+        const haloR = r * 1.75;
+        const grad = ctx.createRadialGradient(pt.x, pt.y, r * 0.4, pt.x, pt.y, haloR);
         grad.addColorStop(0, hex);
         grad.addColorStop(1, "rgba(0,0,0,0)");
         ctx.save();
         ctx.fillStyle = grad;
-        ctx.globalAlpha = 0.65;
+        ctx.globalAlpha = 0.28;
         ctx.beginPath();
         ctx.arc(pt.x, pt.y, haloR, 0, Math.PI * 2);
         ctx.fill();
 
-        // Bright Core Dot
+        // Crisp Core Dot
         ctx.globalAlpha = 1.0;
         ctx.fillStyle = hex;
         ctx.strokeStyle = isSelected ? "#38bdf8" : "#ffffff";
-        ctx.lineWidth = isSelected ? 2.2 : 1.2;
+        ctx.lineWidth = isSelected ? 2.0 : 1.1;
         ctx.beginPath();
         ctx.arc(pt.x, pt.y, r, 0, Math.PI * 2);
         ctx.fill();
@@ -4294,7 +4361,7 @@
         map: glowTexture,
         color: 0x38bdf8,
         transparent: true,
-        opacity: 0.55,
+        opacity: 0.25,
         blending: THREE.AdditiveBlending,
         depthWrite: false
       });
@@ -4492,33 +4559,55 @@
       trailObj.line.geometry.attributes.color.needsUpdate = true;
     }
 
-    function spawnShockwaveRing(lat, lon, hexColor, maxScale = 4.2, duration = 1200) {
-      const geo = new THREE.RingGeometry(0.55, 0.92, 32);
-      const mat = new THREE.MeshBasicMaterial({
-        color: new THREE.Color(hexColor),
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.95,
-        blending: THREE.AdditiveBlending,
-        depthWrite: false
-      });
-      const mesh = new THREE.Mesh(geo, mat);
-      const zoomScale = getCameraZoomScale();
-      const ringRadius = GLOBE_RADIUS + 0.45 * Math.max(0.25, zoomScale);
-      const pos = latLonToVector3(lat, lon, ringRadius);
-      mesh.position.copy(pos);
-      mesh.lookAt(pos.clone().multiplyScalar(2));
-      globeGroup.add(mesh);
+    /**
+     * Spawns a milestone shockwave ring with clear visual hierarchy:
+     * - Major events (`isMajor = true`: Direct-Line Births, Marriages/Remarriages, Deaths) spawn a crisp,
+     *   easily distinguishable dual-pulse ring at a refined, balanced scale.
+     * - Lesser events (`isMajor = false`: Sibling Births, Draft/Military, Immigration/Census) spawn a
+     *   smaller, thinner, lower-intensity ripple so they don't compete with major family milestones.
+     */
+    function spawnShockwaveRing(lat, lon, hexColor, maxScale = 2.8, duration = 1100, isMajor = true) {
+      const innerR = isMajor ? 0.42 : 0.34;
+      const outerR = isMajor ? 0.72 : 0.48;
+      const baseOpacity = isMajor ? 0.84 : 0.36;
 
-      shockwaveRings.push({
-        mesh,
-        bornAt: performance.now(),
-        duration,
-        maxScale
-      });
+      const createWaveMesh = (delayMs, scaleMult, opMult) => {
+        const geo = new THREE.RingGeometry(innerR, outerR, 32);
+        const mat = new THREE.MeshBasicMaterial({
+          color: new THREE.Color(hexColor),
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: baseOpacity * opMult,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false
+        });
+        const mesh = new THREE.Mesh(geo, mat);
+        const zoomScale = getCameraZoomScale();
+        const ringRadius = GLOBE_RADIUS + 0.42 * Math.max(0.25, zoomScale);
+        const pos = latLonToVector3(lat, lon, ringRadius);
+        mesh.position.copy(pos);
+        mesh.lookAt(pos.clone().multiplyScalar(2));
+        globeGroup.add(mesh);
+
+        shockwaveRings.push({
+          mesh,
+          bornAt: performance.now() + delayMs,
+          duration,
+          maxScale: maxScale * scaleMult,
+          baseOpacity: baseOpacity * opMult,
+          isMajor
+        });
+      };
+
+      createWaveMesh(0, 1.0, 1.0);
+      // Major events get a distinct secondary concentric echo ring for unmistakable visual clarity
+      if (isMajor) {
+        createWaveMesh(140, 0.72, 0.75);
+      }
     }
 
     function spawnEphemeralPopupBadge(lat, lon, text, isDirect) {
+      if (labelDisplayMode === "off") return;
       const container = document.getElementById("popups-container");
       if (!container) return;
       const el = document.createElement("div");
@@ -4528,7 +4617,7 @@
         el.style.border = "1px solid #4ade80";
         el.style.color = "#bbf7d0";
       } else {
-        el.style.background = "rgba(19, 78, 74, 0.92)";
+        el.style.background = "rgba(19, 78, 74, 0.88)";
         el.style.border = "1px solid #2dd4bf";
         el.style.color = "#99f6e4";
       }
@@ -4541,7 +4630,7 @@
         lon,
         vec3: latLonToVector3(lat, lon, DOT_ALTITUDE),
         bornAt: performance.now(),
-        duration: 2100
+        duration: isDirect ? 2000 : 1400
       });
     }
 
@@ -4587,9 +4676,9 @@
           vis.sprite.position.copy(state.vec3);
           vis.halo.position.copy(state.vec3);
 
-          const baseSize = union.isRemarriage ? 5.6 : 5.2;
+          const baseSize = union.isRemarriage ? 4.8 : 4.5;
           vis.sprite.scale.set(baseSize * zoomScale, baseSize * zoomScale, 1);
-          vis.halo.scale.set(baseSize * 2.5 * zoomScale, baseSize * 2.5 * zoomScale, 1);
+          vis.halo.scale.set(baseSize * 1.65 * zoomScale, baseSize * 1.65 * zoomScale, 1);
 
           vis.labelEl.textContent = `${union.husband.name.split(" ")[0]} & ${union.wife.name.split(" ")[0]} ${union.husband.name.split(" ").slice(1).join(" ")}`;
           vis.lastState = {
@@ -4649,9 +4738,9 @@
           vis.sprite.position.copy(state.vec3);
           vis.halo.position.copy(state.vec3);
 
-          const baseSize = person.isRoot ? 6.0 : 4.4;
+          const baseSize = person.isRoot ? 5.2 : 3.8;
           vis.sprite.scale.set(baseSize * zoomScale, baseSize * zoomScale, 1);
-          vis.halo.scale.set(baseSize * 2.4 * zoomScale, baseSize * 2.4 * zoomScale, 1);
+          vis.halo.scale.set(baseSize * 1.6 * zoomScale, baseSize * 1.6 * zoomScale, 1);
 
           vis.labelEl.textContent = person.name;
           vis.lastState = {
@@ -4669,31 +4758,42 @@
         if (!usedVisualKeys.has(key)) {
           globeGroup.remove(vis.sprite);
           globeGroup.remove(vis.halo);
-          if (vis.labelEl && vis.labelEl.parentNode) vis.labelEl.parentNode.removeChild(vis.labelEl);
+          if (vis.labelEl && vis.labelEl.parentNode) {
+            vis.labelEl.parentNode.removeChild(vis.labelEl);
+          }
           activeLightVisuals.delete(key);
         }
       });
 
-      // 3. Trigger Milestone Shockwaves & Direct/Sibling Birth Flashes
+      // 3. Trigger Milestone Shockwaves & Direct/Sibling Birth Flashes (Major vs Lesser Hierarchy)
       let siblingFlashesCount = 0;
       activeDataset.allEvents.forEach(ev => {
         if (ev.type === "SIB_CHIL" && ev.year <= year) siblingFlashesCount++;
         if (Math.abs(year - ev.year) <= 0.35 && !triggeredEventIds.has(ev.id)) {
           triggeredEventIds.add(ev.id);
           if (ev.type === "BIRT") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#38bdf8", 3.6, 1000);
+            // Major Event: Direct Ancestor Birth
+            spawnShockwaveRing(ev.lat, ev.lon, "#38bdf8", 2.7, 1100, true);
           } else if (ev.type === "MARR") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#e879f9", 4.8, 1300);
+            // Major Event: 1st Marriage Convergence
+            spawnShockwaveRing(ev.lat, ev.lon, "#e879f9", 3.1, 1250, true);
           } else if (ev.type === "REMARR") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#fb7185", 5.2, 1400);
+            // Major Event: Remarriage Convergence
+            spawnShockwaveRing(ev.lat, ev.lon, "#fb7185", 3.2, 1300, true);
           } else if (ev.type === "DIRECT_CHIL") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#4ade80", 5.2, 1400);
+            // Major Event: Direct-Line Child Born
+            spawnShockwaveRing(ev.lat, ev.lon, "#4ade80", 3.2, 1300, true);
             spawnEphemeralPopupBadge(ev.lat, ev.lon, `★ Direct Line: ${ev.childName}`, true);
+          } else if (ev.type === "DEAT") {
+            // Major Event: Ancestor Death
+            spawnShockwaveRing(ev.lat, ev.lon, "#f87171", 2.6, 1150, true);
           } else if (ev.type === "SIB_CHIL") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#2dd4bf", 3.8, 1150);
+            // Lesser Event: Non-Direct Sibling Born (Subtle, smaller scale)
+            spawnShockwaveRing(ev.lat, ev.lon, "#2dd4bf", 1.55, 720, false);
             spawnEphemeralPopupBadge(ev.lat, ev.lon, `+Sibling: ${ev.childName}`, false);
-          } else if (ev.type === "MILI" || ev.type === "IMMI") {
-            spawnShockwaveRing(ev.lat, ev.lon, "#fbbf24", 4.0, 1100);
+          } else if (ev.type === "MILI" || ev.type === "IMMI" || ev.type === "CENS") {
+            // Lesser Event: Draft, Immigration, or Census Milestone (Subtle, smaller scale)
+            spawnShockwaveRing(ev.lat, ev.lon, "#fbbf24", 1.45, 680, false);
           }
         } else if (year < ev.year - 0.5 && triggeredEventIds.has(ev.id)) {
           triggeredEventIds.delete(ev.id);
@@ -4834,6 +4934,10 @@
         if (age >= p.duration) {
           if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el);
           ephemeralPopups.splice(i, 1);
+          continue;
+        }
+        if (labelDisplayMode === "off") {
+          p.el.style.display = "none";
           continue;
         }
         const prog = age / p.duration;
@@ -5385,11 +5489,87 @@
 
       if (rawInds.size === 0) return null;
 
+      // 1. Extract explicit birth, death, and marriage years where present
+      rawInds.forEach(ind => {
+        const bEv = ind.events.find(e => e.type === "BIRT" && e.year);
+        const dEv = ind.events.find(e => e.type === "DEAT" && e.year);
+        ind.birthYear = bEv ? bEv.year : null;
+        ind.deathYear = dEv ? dEv.year : null;
+        ind.birthYearEstimated = !bEv;
+      });
+
+      // 2. Iteratively estimate missing birth years from parents, children, spouses, and other dated records
+      const GENERATION_GAP = 28;
+      for (let pass = 0; pass < 14; pass++) {
+        let changed = false;
+        rawInds.forEach(ind => {
+          if (ind.birthYear !== null) return;
+
+          const parentEstimates = [];
+          const childEstimates = [];
+          const spouseEstimates = [];
+
+          // Check parents via FAMC
+          if (ind.famc && rawFams.has(ind.famc)) {
+            const fam = rawFams.get(ind.famc);
+            if (fam.marr && fam.marr.year) {
+              parentEstimates.push(fam.marr.year + 2);
+            }
+            const husb = fam.husb ? rawInds.get(fam.husb) : null;
+            const wife = fam.wife ? rawInds.get(fam.wife) : null;
+            if (husb && husb.birthYear !== null) parentEstimates.push(husb.birthYear + GENERATION_GAP);
+            if (wife && wife.birthYear !== null) parentEstimates.push(wife.birthYear + GENERATION_GAP);
+          }
+
+          // Check children and spouses via FAMS
+          ind.fams.forEach(fid => {
+            const fam = rawFams.get(fid);
+            if (!fam) return;
+            if (fam.marr && fam.marr.year) {
+              spouseEstimates.push(fam.marr.year - 25);
+            }
+            const spId = fam.husb === ind.id ? fam.wife : fam.husb;
+            const sp = spId ? rawInds.get(spId) : null;
+            if (sp && sp.birthYear !== null) {
+              spouseEstimates.push(sp.birthYear);
+            }
+            (fam.children || []).forEach(cid => {
+              const ch = rawInds.get(cid);
+              if (ch && ch.birthYear !== null) {
+                childEstimates.push(ch.birthYear - GENERATION_GAP);
+              }
+            });
+          });
+
+          let estimated = null;
+          if (parentEstimates.length > 0 && childEstimates.length > 0) {
+            const avgP = parentEstimates.reduce((a, b) => a + b, 0) / parentEstimates.length;
+            const minC = Math.min(...childEstimates);
+            estimated = Math.round((avgP + minC) * 0.5);
+          } else if (childEstimates.length > 0) {
+            estimated = Math.round(Math.min(...childEstimates));
+          } else if (parentEstimates.length > 0) {
+            estimated = Math.round(parentEstimates.reduce((a, b) => a + b, 0) / parentEstimates.length);
+          } else if (spouseEstimates.length > 0) {
+            estimated = Math.round(spouseEstimates.reduce((a, b) => a + b, 0) / spouseEstimates.length);
+          } else if (ind.deathYear !== null) {
+            estimated = ind.deathYear - 68;
+          } else {
+            const datedEv = ind.events.find(e => e.year !== null);
+            if (datedEv) estimated = datedEv.year - 25;
+          }
+
+          if (estimated !== null) {
+            ind.birthYear = estimated;
+            changed = true;
+          }
+        });
+        if (!changed) break;
+      }
+
       // Pick default root person (youngest direct person with parents)
       let rootCand = null;
       rawInds.forEach(ind => {
-        const bEv = ind.events.find(e => e.type === "BIRT" && e.year);
-        ind.birthYear = bEv ? bEv.year : null;
         if (ind.famc && (!rootCand || (ind.birthYear || 0) > (rootCand.birthYear || 0))) {
           rootCand = ind;
         }
@@ -5420,10 +5600,18 @@
         }
       }
 
+      // Final fallback for any unanchored ancestor using their generation number relative to rootCand
+      const rootBirthYear = rootCand.birthYear || 1980;
+      rawInds.forEach(ind => {
+        if (ind.birthYear === null) {
+          const g = genMap.get(ind.id) || 2;
+          ind.birthYear = rootBirthYear - (g - 1) * GENERATION_GAP;
+        }
+      });
+
       const individuals = [];
       rawInds.forEach(ind => {
         const isDirect = directSet.has(ind.id);
-        // Also include spouses of direct ancestors so remarriages work
         const isSpouseOfDirect = ind.fams.some(fid => {
           const f = rawFams.get(fid);
           return f && (directSet.has(f.husb) || directSet.has(f.wife));
@@ -5431,34 +5619,93 @@
         if (!isDirect && !isSpouseOfDirect) return;
 
         const famcObj = ind.famc ? rawFams.get(ind.famc) : null;
-        const records = [];
-        let fallbackCoords = [39.8, -98.5];
+        const birthYear = ind.birthYear;
 
-        ind.events.forEach(ev => {
+        // Ensure a BIRT event exists and is processed first
+        let birthEv = ind.events.find(e => e.type === "BIRT");
+        if (!birthEv) {
+          birthEv = { type: "BIRT", year: birthYear, place: null, lat: null, lon: null };
+        } else if (!birthEv.year) {
+          birthEv.year = birthYear;
+        }
+
+        // Resolve Birth Location: If no location is specified for birth, place at the North Pole!
+        let lastKnownCoords = [...NORTH_POLE_COORDS];
+        let lastKnownPlace = "North Pole (Birthplace Unspecified)";
+
+        if (birthEv.lat !== null && birthEv.lon !== null) {
+          lastKnownCoords = [birthEv.lat, birthEv.lon];
+          lastKnownPlace = birthEv.place || `${birthEv.lat.toFixed(1)}°, ${birthEv.lon.toFixed(1)}°`;
+        } else if (birthEv.place) {
+          const geo = geocodePlaceWithConfidence(birthEv.place, null);
+          if (geo.matched) {
+            lastKnownCoords = geo.coords;
+            lastKnownPlace = birthEv.place;
+          }
+        }
+
+        const records = [{
+          year: birthEv.year,
+          type: "BIRT",
+          place: lastKnownPlace,
+          lat: lastKnownCoords[0],
+          lon: lastKnownCoords[1],
+          label: ind.birthYearEstimated
+            ? `Born (Est. ${birthEv.year}) in ${lastKnownPlace}`
+            : `Born in ${lastKnownPlace}`
+        }];
+
+        // Sort remaining non-birth events chronologically and estimate missing event years if needed
+        const otherEvents = ind.events.filter(e => e !== birthEv);
+        otherEvents.forEach((ev, idx) => {
+          if (!ev.year) {
+            if (ev.type === "DEAT") {
+              ev.year = ind.deathYear || (birthYear < 1925 ? birthYear + 72 : null);
+            } else {
+              ev.year = birthYear + 20 + idx * 6;
+            }
+          }
+        });
+        otherEvents.sort((a, b) => (a.year || 0) - (b.year || 0));
+
+        // Process subsequent events: if an event has no location data, keep the dot at `lastKnownCoords`!
+        otherEvents.forEach(ev => {
           if (!ev.year) return;
-          const place = ev.place || "United States";
-          const coords = (ev.lat !== null && ev.lon !== null)
-            ? [ev.lat, ev.lon]
-            : geocodePlaceString(place, fallbackCoords);
-          fallbackCoords = coords;
+          if (ev.lat !== null && ev.lon !== null) {
+            lastKnownCoords = [ev.lat, ev.lon];
+            if (ev.place) lastKnownPlace = ev.place;
+          } else if (ev.place) {
+            const geo = geocodePlaceWithConfidence(ev.place, lastKnownCoords);
+            if (geo.matched) {
+              lastKnownCoords = geo.coords;
+              lastKnownPlace = ev.place;
+            }
+          }
           records.push({
             year: ev.year,
             type: ev.type,
-            place,
-            lat: coords[0],
-            lon: coords[1],
-            label: `${ev.type} in ${place}`
+            place: lastKnownPlace,
+            lat: lastKnownCoords[0],
+            lon: lastKnownCoords[1],
+            label: `${ev.type} in ${lastKnownPlace}`
           });
         });
 
-        const birthRec = records.find(r => r.type === "BIRT") || records[0];
         const deathRec = records.find(r => r.type === "DEAT");
-        const birthYear = birthRec ? birthRec.year : 1850;
-        const deathYear = deathRec ? deathRec.year : (birthYear < 1925 ? birthYear + 72 : null);
+        const deathYear = deathRec ? deathRec.year : (birthYear < 1920 ? birthYear + 72 : null);
 
-        if (records.length === 0) {
-          records.push({ year: birthYear, type: "BIRT", place: "United States", lat: 39.8, lon: -98.5, label: "Birth" });
-        }
+        // Helper to find this ancestor's location at or just before a given year
+        const getLocationAtYear = (targetYear) => {
+          let coords = [records[0].lat, records[0].lon];
+          let place = records[0].place;
+          for (let i = 0; i < records.length; i++) {
+            if (records[i].year <= targetYear) {
+              coords = [records[i].lat, records[i].lon];
+              place = records[i].place;
+            }
+          }
+          return { coords, place };
+        };
 
         const marriages = [];
         ind.fams.forEach((fid, mIdx) => {
@@ -5468,18 +5715,47 @@
           const spouseRaw = rawInds.get(spouseId);
           if (!spouseRaw) return;
 
-          const mYear = (fam.marr && fam.marr.year) ? fam.marr.year : birthYear + 25 + mIdx * 8;
-          const mPlace = (fam.marr && fam.marr.place) ? fam.marr.place : (records[0]?.place || "United States");
-          const mCoords = geocodePlaceString(mPlace, fallbackCoords);
+          // Estimate marriage year from children or couple's birth years if missing
+          let mYear = (fam.marr && fam.marr.year) ? fam.marr.year : null;
+          if (!mYear) {
+            const childBirthYears = (fam.children || [])
+              .map(cid => rawInds.get(cid)?.birthYear)
+              .filter(y => y !== null && y !== undefined);
+            if (childBirthYears.length > 0) {
+              mYear = Math.min(...childBirthYears) - 2;
+            } else {
+              const spBirth = spouseRaw.birthYear || birthYear;
+              mYear = Math.round((birthYear + spBirth) * 0.5) + 25 + mIdx * 6;
+            }
+          }
+
+          const priorLoc = getLocationAtYear(mYear);
+          let mCoords = priorLoc.coords;
+          let mPlace = priorLoc.place;
+
+          if (fam.marr && fam.marr.place) {
+            const geo = geocodePlaceWithConfidence(fam.marr.place, priorLoc.coords);
+            if (geo.matched) {
+              mCoords = geo.coords;
+              mPlace = fam.marr.place;
+            }
+          }
 
           const famChildren = [];
-          (fam.children || []).forEach(cid => {
+          (fam.children || []).forEach((cid, cIdx) => {
             const chRaw = rawInds.get(cid);
             if (!chRaw) return;
             const chBirt = chRaw.events.find(e => e.type === "BIRT");
-            const chYear = (chBirt && chBirt.year) ? chBirt.year : mYear + 2;
-            const chPlace = (chBirt && chBirt.place) ? chBirt.place : mPlace;
-            const chCoords = geocodePlaceString(chPlace, mCoords);
+            const chYear = (chBirt && chBirt.year) ? chBirt.year : (chRaw.birthYear || (mYear + 2 + cIdx * 2));
+            let chPlace = mPlace;
+            let chCoords = [...mCoords];
+            if (chBirt && chBirt.place) {
+              const chGeo = geocodePlaceWithConfidence(chBirt.place, mCoords);
+              if (chGeo.matched) {
+                chCoords = chGeo.coords;
+                chPlace = chBirt.place;
+              }
+            }
             famChildren.push({
               id: cid,
               name: chRaw.name,
@@ -5571,48 +5847,68 @@
         btnText.textContent = "🗺️ 2D Map";
         canvas3d.classList.add("hidden");
         canvas2d.classList.remove("hidden");
-        // Sync 2D Map center to current 3D camera target lat/lon
         if (camera) {
           const ll = vector3ToLatLon(camera.position);
-          map2DCenterLat = Math.max(-70, Math.min(70, ll.lat));
+          map2DCenterLat = Math.max(-72, Math.min(72, ll.lat));
           map2DCenterLon = ll.lon;
         }
-        syncViewportSize();
-        showToast("Switched to 2D Flat Map View");
       } else {
         btnText.textContent = "🌐 3D Globe";
         canvas2d.classList.add("hidden");
         canvas3d.classList.remove("hidden");
-        syncViewportSize();
-        showToast("Switched to 3D Interactive Globe View");
+        if (camera) {
+          const curDist = camera.position.length();
+          camera.position.copy(latLonToVector3(map2DCenterLat, map2DCenterLon, curDist));
+        }
       }
+      syncViewportSize();
       updateTimelineState(currentYear);
     }
 
-    function toggleDeviceUIMode(forceMode = null) {
-      deviceUIMode = forceMode || (deviceUIMode === "desktop" ? "mobile" : "desktop");
+    /**
+     * Automatically detects whether the user is on a mobile/touchscreen device or narrow viewport
+     * and configures the display and controls without requiring a manual toggle button.
+     */
+    function detectIsMobileDevice() {
+      const isNarrowScreen = window.matchMedia("(max-width: 860px)").matches;
+      const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
+      const isMobileAgent = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      return isNarrowScreen || (isTouchScreen && isMobileAgent);
+    }
+
+    function applyAutoDetectedDeviceLayout() {
+      const shouldBeMobile = detectIsMobileDevice();
+      const prevMode = deviceUIMode;
+      deviceUIMode = shouldBeMobile ? "mobile" : "desktop";
+
       const shell = document.querySelector(".app-shell");
-      const modeText = document.getElementById("device-mode-text");
       const leftSb = document.getElementById("left-sidebar");
       const rightSb = document.getElementById("right-sidebar");
 
       if (deviceUIMode === "mobile") {
         shell.classList.add("mobile-ui-mode");
-        modeText.textContent = "Mobile";
-        leftSb.classList.add("collapsed");
-        rightSb.classList.add("collapsed");
-        showToast("Mobile Touch UI Enabled (Tap Inspector / Events for Bottom Drawers)");
+        if (prevMode !== "mobile") {
+          leftSb.classList.add("collapsed");
+          rightSb.classList.add("collapsed");
+        }
       } else {
         shell.classList.remove("mobile-ui-mode");
-        modeText.textContent = "Desktop";
-        leftSb.classList.remove("collapsed");
-        if (window.innerWidth >= 1150) rightSb.classList.remove("collapsed");
-        showToast("Desktop Widescreen UI Enabled");
+        if (prevMode !== "desktop") {
+          leftSb.classList.remove("collapsed");
+          if (window.innerWidth >= 1150) rightSb.classList.remove("collapsed");
+          else rightSb.classList.add("collapsed");
+        }
       }
-      setTimeout(syncViewportSize, 260);
+      setTimeout(syncViewportSize, 60);
     }
 
     function initUIControls() {
+      // Automatically apply Mobile vs Desktop layout on load and window resize/orientationchange
+      applyAutoDetectedDeviceLayout();
+      window.addEventListener("resize", () => {
+        applyAutoDetectedDeviceLayout();
+      });
+
       // Play / Pause
       document.getElementById("btn-play-pause").addEventListener("click", () => {
         isPlaying = !isPlaying;
@@ -5663,17 +5959,14 @@
       // 3D Globe vs 2D Map Toggle
       document.getElementById("btn-view-projection").addEventListener("click", () => toggleViewProjectionMode());
 
-      // Desktop vs Mobile UI Toggle
-      document.getElementById("btn-device-mode").addEventListener("click", () => toggleDeviceUIMode());
-
-      // Map Style Toggle
+      // Map Style Toggle (Dark Muted Landscape vs Darkened Satellite)
       document.getElementById("btn-map-style").addEventListener("click", () => {
-        mapStyleMode = mapStyleMode === "satellite" ? "political" : "satellite";
-        document.getElementById("map-style-text").textContent = mapStyleMode === "satellite" ? "Satellite" : "Political";
+        mapStyleMode = mapStyleMode === "atlas" ? "satellite" : "atlas";
+        document.getElementById("map-style-text").textContent = mapStyleMode === "atlas" ? "Dark Landscape" : "Satellite";
         redrawEarthCanvas(currentYear);
       });
 
-      // Label Mode Cycle
+      // Label Mode Cycle (Smart / Hover / Off — also controls Direct-Line Birth Popups)
       document.getElementById("btn-label-mode").addEventListener("click", () => {
         const order = ["smart", "hover", "off"];
         labelDisplayMode = order[(order.indexOf(labelDisplayMode) + 1) % order.length];
@@ -5894,11 +6187,16 @@
         prevCamDist = curDist;
       }
 
-      // Animate expanding shockwave rings
+      // Animate expanding shockwave rings (Supports delayed concentric dual-waves for major events)
       const zoomScale = getCameraZoomScale();
       for (let i = shockwaveRings.length - 1; i >= 0; i--) {
         const r = shockwaveRings[i];
         const age = now - r.bornAt;
+        if (age < 0) {
+          r.mesh.visible = false;
+          continue;
+        }
+        r.mesh.visible = true;
         if (age >= r.duration) {
           globeGroup.remove(r.mesh);
           r.mesh.geometry.dispose();
@@ -5909,13 +6207,12 @@
         const prog = age / r.duration;
         const s = (1 + prog * r.maxScale) * zoomScale;
         r.mesh.scale.set(s, s, 1);
-        r.mesh.material.opacity = (1 - prog) * 0.9;
+        r.mesh.material.opacity = (1 - prog) * (r.baseOpacity || 0.8);
       }
 
-      // Subtle halo pulse
-      const pulse = 1 + 0.14 * Math.sin(now * 0.006);
+      // Steady, non-pulsing halo scaled strictly by camera zoom
       activeLightVisuals.forEach(vis => {
-        const base = (vis.kind === "COUPLE" ? 5.3 : 4.4) * 2.4 * zoomScale * pulse;
+        const base = (vis.kind === "COUPLE" ? 4.6 : 3.8) * 1.6 * zoomScale;
         vis.halo.scale.set(base, base, 1);
       });
 
